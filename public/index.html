@@ -3,9 +3,75 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Thump a Trump!</title>
+	<link rel="stylesheet" href="/css/thumpatrump.css">
+	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
-	<h1>Use the U.S. Constitution to put Trump back in his place...</h1>
+	<header>
+		<h1 id="pageTitle">Use your vote to put Trump back in his place...</h1>
+			<div class="scoreArea">
+				<button id="startGame">Start Game</button>
+				<button id="reset">Reset</button>
+				<div class="scoreArea">
+					<h2>Timer:</h2>
+					<h1 class="score" id="timer">30</h1>
+				</div>
+				<div class="scoreArea">
+					<h2>Body Count:</h2>
+					<h1 class="score" id="bodyCount">0</h1>
+				</div>
+				<div class="scoreArea">
+					<h2>High Score:</h2>
+					<h1 class="score" id="highScore">0</h1>
+				</div>
+				<div class="scoreArea">
+					<h2>Escaped Trumps:</h2>
+					<h1 class="score" id="escTrumps">0</h1>
+				</div>
+			</div>
+	</header>
+	<div class="container">
+		<div class="row" id="row1">
+			<div class="box" id="row1box1" data-id="1"></div>
+			<div class="box" id="row1box2" data-id="2"></div>
+			<div class="box" id="row1box3" data-id="3"></div>
+			<div class="box" id="row1box4" data-id="4"></div>
+		</div>
+		<div class="ballotBox">
+			<img src="/img/ballotBox.png">
+			<img src="/img/ballotBox.png">
+			<img src="/img/ballotBox.png">
+			<img src="/img/ballotBox.png">
+		</div>
+		<div class="row" id="row2">
+			<div class="box" id="row2box1" data-id="5"></div>
+			<div class="box" id="row2box2" data-id="6"></div>
+			<div class="box" id="row2box3" data-id="7"></div>
+			<div class="box" id="row2box4" data-id="8"></div>
+		</div>
+		<div class="ballotBox">
+			<img src="/img/ballotBox.png">
+			<img src="/img/ballotBox.png">
+			<img src="/img/ballotBox.png">
+			<img src="/img/ballotBox.png">
+		</div>
+		<div class="row" id="row3">
+			<div class="box" id="row3box1" data-id="9"></div>
+			<div class="box" id="row3box2" data-id="10"></div>
+			<div class="box" id="row3box3" data-id="11"></div>
+			<div class="box" id="row3box4" data-id="12"></div>
+		</div>
+		<div class="ballotBox">
+			<img src="/img/ballotBox.png">
+			<img src="/img/ballotBox.png">
+			<img src="/img/ballotBox.png">
+			<img src="/img/ballotBox.png">
+		</div>
+	</div>
+
+	<script src="/js/jquery-2.2.0.min.js"></script>
+	<script src="/js/thumpatrump.js"></script>
 	
 </body>
 </html>
